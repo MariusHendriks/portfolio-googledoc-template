@@ -1,0 +1,23 @@
+.o-table__container {
+  width: 25%;
+}
+.o-table {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  width: 80%;
+
+  &__header {
+    display: flex;
+  }
+
+  &__row {
+    display: flex;
+    padding: $extra-small-spacing 0 $extra-small-spacing;
+  }
+  &__left {
+    width: 40%;
+    word-break: break-word;
+  }
+}

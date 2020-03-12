@@ -1,0 +1,73 @@
+{
+    "sco": {
+        "naam": "Strategy and concepting",
+        "afkorting": "SCO",
+        "leerdoelen": [
+            {
+                "naam": "Oordeelvorming",
+                "documenten": [
+                    {
+                        "naam": "Documentnaam",
+                        "id": "google-docs-id",
+                        "week": 1,
+                        "beschrijving": "In dit document doe ik dit en dit"
+                    }
+                ]
+            },
+            {
+                "naam": "Concept",
+                "documenten": []
+            },
+            {
+                "naam": "Business Model",
+                "documenten": []
+            },
+            {
+                "naam": "Marketing",
+                "documenten": []
+            },
+            {
+                "naam": "Communicatie",
+                "documenten": []
+            }
+        ]
+    },
+    "pro": {
+        "naam": "Professionele ontwikkeling",
+        "afkorting": "PRO",
+        "leerdoelen": [
+            {
+                "naam": "Houding",
+                "documenten": []
+            }
+        ]
+    },
+    "uxu": {
+        "naam": "User experience & user centered design",
+        "afkorting": "UXU",
+        "leerdoelen": [
+            {
+                "naam": "Design",
+                "documenten": []
+            },
+            {
+                "naam": "User Experience",
+                "documenten": []
+            },
+            {
+                "naam": "Gebruikers Onderzoek",
+                "documenten": []
+            }
+        ]
+    },
+    "ded": {
+        "naam": "Design & development",
+        "afkorting": "DED",
+        "leerdoelen": [
+            {
+                "naam": "Programmeren",
+                "documenten": []
+            }
+        ]
+    }
+}
