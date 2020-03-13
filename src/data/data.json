@@ -1,73 +1,29 @@
 {
-    "sco": {
-        "naam": "Strategy and concepting",
-        "afkorting": "SCO",
-        "leerdoelen": [
-            {
-                "naam": "Oordeelvorming",
-                "documenten": [
-                    {
-                        "naam": "Documentnaam",
-                        "id": "google-docs-id",
-                        "week": 1,
-                        "beschrijving": "In dit document doe ik dit en dit"
-                    }
-                ]
-            },
-            {
-                "naam": "Concept",
-                "documenten": []
-            },
-            {
-                "naam": "Business Model",
-                "documenten": []
-            },
-            {
-                "naam": "Marketing",
-                "documenten": []
-            },
-            {
-                "naam": "Communicatie",
-                "documenten": []
-            }
-        ]
-    },
-    "pro": {
-        "naam": "Professionele ontwikkeling",
-        "afkorting": "PRO",
-        "leerdoelen": [
-            {
-                "naam": "Houding",
-                "documenten": []
-            }
-        ]
-    },
-    "uxu": {
-        "naam": "User experience & user centered design",
-        "afkorting": "UXU",
-        "leerdoelen": [
-            {
-                "naam": "Design",
-                "documenten": []
-            },
-            {
-                "naam": "User Experience",
-                "documenten": []
-            },
-            {
-                "naam": "Gebruikers Onderzoek",
-                "documenten": []
-            }
-        ]
-    },
-    "ded": {
-        "naam": "Design & development",
-        "afkorting": "DED",
-        "leerdoelen": [
-            {
-                "naam": "Programmeren",
-                "documenten": []
-            }
-        ]
+  "documents": [
+    {
+      "name": "Example Document",
+      "id": "your-google-id: example: https://docs.google.com/document/d/   This part >>>     1Qq96zcYrjX9nusrSHT96cpUn0lJB0Fw5jet7OnMC-Y0     <<< This part     /preview",
+      "week": 1,
+      "description": "In dit document doe ik dit en dit",
+      "learningGoals": [1]
     }
+  ],
+  "courses": [
+    {
+      "name": "Example course name",
+      "learningGoals": [
+        {
+          "name": "example learning goal (connected with the example document)",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "name": "Example course name 2",
+      "learningGoals": [
+        { "name": "example learning goal", "id": 2 },
+        { "name": "example learning goal", "id": 3 }
+      ]
+    }
+  ]
 }

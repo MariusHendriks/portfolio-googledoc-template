@@ -2,22 +2,33 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Homepage from "../homepage/Index";
 import Document from "../document/Index";
-import SortDataByWeek from "../../functions/dataFormatting";
+import {
+  SortDataByWeek,
+  SortDataByCourse
+} from "../../functions/dataFunctions";
+
 import data from "../../data/data.json";
-import Leeswijzer from "../leeswijzer/Index";
+import ReadingGuide from "../readingGuide/Index";
+
 function Router() {
-  let sortedWeken: iWeek[];
+  let dataByWeek: iWeek[];
+  let dataByLearningGoal: iCourseReadingGuide[];
+
   if (typeof data !== "undefined") {
-    sortedWeken = SortDataByWeek(data);
-    console.log("sortedWeken. :", sortedWeken);
+    dataByWeek = SortDataByWeek(data);
+    dataByLearningGoal = SortDataByCourse(data);
+
     return (
       <Switch>
         <Route exact path="/">
-          <Homepage data={data} sortedData={sortedWeken} />
+          <Homepage
+            readingGuideData={dataByLearningGoal}
+            sortedData={dataByWeek}
+          />
         </Route>
         <Route exact path="/leeswijzer">
           <div className="container">
-            <Leeswijzer data={data} />
+            <ReadingGuide data={dataByLearningGoal} />
           </div>
         </Route>
         <div className="container">
@@ -25,8 +36,8 @@ function Router() {
             path="/documents/:documentId"
             render={({ match }) => (
               <Document
-                pDocument={sortedWeken
-                  .flatMap(w => w.documenten)
+                pDocument={dataByWeek
+                  .flatMap(w => w.documents)
                   .find(document => document.id === match.params.documentId)}
               />
             )}

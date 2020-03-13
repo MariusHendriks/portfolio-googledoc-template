@@ -1,25 +1,32 @@
 interface iDocument {
-  naam: string;
+  name: string;
   id: string;
   week: number;
-  beschrijving?: string;
-}
-interface iLeerdoel {
-  naam: string;
-  documenten: iDocument[];
-}
-interface iOnderwerp {
-  naam: string;
-  afkorting: string;
-  leerdoelen: iLeerdoel[];
+  description?: string;
+  learningGoals: string[];
 }
 interface iWeek {
   weekNummer: number;
-  documenten: iDocument[];
+  documents: iDocument[];
 }
-interface iVakken {
-  sco: iOnderwerp;
-  pro: iOnderwerp;
-  uxu: iOnderwerp;
-  ded: iOnderwerp;
+interface iCourse {
+  name: string;
+  learningGoals: string[];
+}
+interface iData {
+  documents: iDocument[];
+  courses: iCourse[];
+}
+interface iDataReadingGuide {
+  courses: iCourseReadingGuide[];
+}
+interface iCourseReadingGuide {
+  name: string;
+  afkorting: string;
+  learningGoals: iLearningGoal[];
+}
+interface iLearningGoal {
+  name: string;
+  id: string;
+  documents: iDocument[];
 }
